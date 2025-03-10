@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 #include <vector>
 #include <string>
 
@@ -39,6 +40,42 @@ public:
 	}
 };
 
+class GameOfLife{
+public:
+	void execute(){
+		int cnt=0;
+
+		vector<string> map={"01000010000000000001",
+	                        "00010011010000000001",
+	                        "01001010010000000001",
+	                        "00010001100000000001",
+	                        "01000001010000000001"};
+
+	    for(){
+	    	
+	    }
+
+	    print(map);
+	}
+
+	void print(vector<string> map){
+		int life=223;
+		for(int i=0; i<map.size(); i++){
+	    	string it=map[i];
+	    	for(char et: it){
+	    		if(et=='0'){
+	    			cout<<" ";
+	    		}else cout<<char(life);
+	    	}
+	    	cout<<endl;
+	    }
+	};
+};
+
 int main(){
+	GameOfLife game;
+
+	game.execute();
+
 	return 0;
 }
